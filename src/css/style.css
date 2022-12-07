@@ -1,0 +1,15 @@
+.slide{
+    display: flex;
+    transform: translate3d(0px, 0px, 0px);
+}
+
+.slide li {
+    flex-shrink: 0;
+    width: 80vw;
+    max-width: 800px;
+    margin: 0 20px;
+}
+
+.slide-wrapper{
+    overflow: hidden;
+}
