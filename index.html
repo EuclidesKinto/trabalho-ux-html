@@ -7,15 +7,202 @@
   <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
 </head>
 <body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
-  <div x-data="{ open: false }">
-    <button @click="open = ! open">Toggle Content</button>
-
-    <div x-show="open">
-      Content...
+  <header class="bg-gray-100 flex flex-col flex-1 sm:flex-row py-5 px-5">
+    <!--LOGO-->
+    <div class="sm:order-first  sm:w-64 flex items-center justify-center">
+      <a href="index.html">
+        <img src="src/image/logo.png" alt="">
+      </a>
     </div>
-  </div>
+
+    <!--forms search-->
+    <div class="flex-1 relative flex-grow order-2 w-full pt-1 mt-3 mr-0 lg:mt-0 lg:w-auto md:mr-3 md:order-none ">
+      <div class="relative flex-grow order-2 w-full pt-1 mr-0 md:w-auto md:order-none ">
+        <form  class="flex" action="" method="post">
+          <input type="text" placeholder="Pesquisar Produto"
+                 class="flex-grow w-full pl-2 pr-3 border-0 block py-2 px-0 w-full rounded-l text-md text-gray-900  border-0 border-b-2 border-gray-300  focus:outline-none focus:ring-0 "/>
+          <button class="text-white  inline-flex items-center p-2 pr-3 border-r rounded-r top-1 bg-orange-500">
+            Pesquisar
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="flex items-center justify-end sm:order-last">
+      <div class="items-end flex-1 text-gray-500  hidden md:flex">
+        <nav class="flex-1">
+          <ul class="flex justify-end flex-1">
+            <li class="px-2">
+              <a href="#" class="hover:underline text-sm">Sobre</a>
+            </li>
+            <li class="px-2">
+              <a href="#" class="hover:underline text-sm">Categorias</a>
+            </li>
+            <li class="px-2">
+              <a href="#" class="hover:underline text-sm">Contato</a>
+            </li>
+            <li class="px-2">
+              <span class="border-r border-gray-400"></span>
+            </li>
+            <li class="px-2">
+              <a href="#" class="hover:underline text-sm">Cadastre-se</a>
+            </li>
+            <li class="px-2">
+              <a href="#" class="hover:underline text-sm">Entrar</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+<!--  MAIN -->
+  <main class="flex-1">
+    <!--image hero-->
+    <div class=" bg-gradient-to-tl from-green-500 to-indigo-500">
+      <img src="src/image/hero.png" tabindex="0"  class="focus:outline-none h-95 shadow rounded-t w-full object-cover object-center">
+    </div>
+
+    <div class="flex justify-center font-bold py-10 text-3xl">
+      Os Mais vendidos
+    </div>
+
+    <div class="flex justify-center py-10 text-3xl gap-6">
+      <!--CARDs-->
+      <div class="max-w-sm rounded overflow-hidden shadow-lg p-5  hover:bg-gray-100 cursor-pointer">
+        <img class="w-full" src="src/image/camisa.png" alt="camisa">
+        <div class="px-6 py-4 ">
+          <div class="font-bold text-xl mb-2 text-center">Camisa Polo 02</div>
+          <p class="text-gray-400 text-xs italic text-center">
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2 flex justify-center">
+          <span class="inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
+            Saiba Mais
+          </span>
+          </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg p-5  hover:bg-gray-100 cursor-pointer">
+        <img class="w-full" src="src/image/camisa.png" alt="camisa">
+        <div class="px-6 py-4 ">
+          <div class="font-bold text-xl mb-2 text-center">Camisa Polo 02</div>
+          <p class="text-gray-400 text-xs italic text-center">
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2 flex justify-center">
+          <span class="inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
+            Saiba Mais
+          </span>
+          </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg p-5  hover:bg-gray-100 cursor-pointer">
+        <img class="w-full" src="src/image/camisa.png" alt="camisa">
+        <div class="px-6 py-4 ">
+          <div class="font-bold text-xl mb-2 text-center">Camisa Polo 02</div>
+          <p class="text-gray-400 text-xs italic text-center">
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2 flex justify-center">
+          <span class="inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
+            Saiba Mais
+          </span>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg p-5  hover:bg-gray-100 cursor-pointer">
+        <img class="w-full" src="src/image/camisa.png" alt="camisa">
+        <div class="px-6 py-4 ">
+          <div class="font-bold text-xl mb-2 text-center">Camisa Polo 02</div>
+          <p class="text-gray-400 text-xs italic text-center">
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2 flex justify-center">
+          <span class="inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
+            Saiba Mais
+          </span>
+        </div>
+      </div>
+
+    </div>
+
+
+  </main>
+
+<!--Footer-->
+
+  <footer class="bg-gray-200">
+    <div class="px-10 grid grid-cols-1 p-3 py-4 mx-auto text-white md:grid-cols-6 md:pt-20 md:pr-20 md:pb-5">
+      <div class="pt-10 md:col-span-1 md:pt-0">
+        <a href="index.html">
+          <img src="src/image/logo.png" alt="" class="w-40">
+        </a>
+        <p class="mt-2 mb-2 text-xs text-gray-500">Rua Piauí<br>nº 1234<br>CEP:64000-000<br>suporte@lojinha.com.br</p>
+      </div>
+
+      <div class="pt-10 ml-10 md:col-span-1 md:pt-4">
+        <ul>
+          <li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="about.html">Sobre</a>
+          </li>
+          <li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="contact.html">Contato</a>
+          </li>
+          <li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="categories.html">Categorias</a>
+          </li>
+        </ul>
+      </div>
+      <div class="pt-10 ml-10 md:col-span-1 md:pt-4">
+        <ul>
+          <li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="login.html">Login</a>
+          </li>
+          <li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="register.html">Cadastre-se</a>
+          </li><li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="index.html">Como Chegar</a>
+          </li>
+        </ul>
+      </div>
+      <div class="pt-10 ml-1 md:col-span-1 md:pt-4">
+        <ul>
+          <li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="index.html">Como Comprar</a>
+          </li>
+          <li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="index.html">Política de Privacidade</a>
+          </li>
+          <li class="mb-2 leading-4 text-gray-500 hover:underline">
+            <a href="index.html">Política de Devolução</a>
+          </li>
+        </ul>
+      </div>
+      <div class="pt-10 md:col-span-2 md:pt-4">
+        <h3 class="mb-5 text-xs text-center font-bold tracking-widest text-gray-500 uppercase">Redes Sociais</h3>
+        <ul class="flex md:justify-center">
+          <li class="flex items-center justify-center w-12 h-12 mx-2 text-2xl rounded-full bg-darkblue-500 hover:text-green-main">
+            <img src="src/image/whatsapp.png">
+          </li>
+          <li class="flex items-center justify-center w-12 h-12 mx-2 text-2xl rounded-full bg-darkblue-500 hover:text-green-main">
+            <img src="src/image/twitter.png">
+          </li>
+          <li class="flex items-center justify-center w-12 h-12 mx-2 text-2xl rounded-full bg-darkblue-500 hover:text-green-main">
+            <img src="src/image/instagram.png">
+          </li>
+          <li class="flex items-center justify-center w-12 h-12 mx-2 text-2xl rounded-full bg-darkblue-500 hover:text-green-main">
+            <img src="src/image/youtube.png">
+          </li>
+        </ul>
+      </div>
+
+      <div class="mt-20 md:col-span-4">
+        <p class="flex justify-end text-xs text-gray-500 hover:underline">Trabalho de UX/UI- Prof. Sahra &copy; 2022</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
