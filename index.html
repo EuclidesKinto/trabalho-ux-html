@@ -3,8 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/style.css">
   <script src="https://cdn.tailwindcss.com"></script>
-  <script defer src="https://unpkg.com/alpinejs@3.10.5/dist/cdn.min.js"></script>
+
+  <title>Lojinha da Vovó</title>
 </head>
 <body>
   <header class="bg-gray-100 flex flex-col flex-1 sm:flex-row py-5 px-5">
@@ -59,16 +61,31 @@
 <!--  MAIN -->
   <main class="flex-1">
     <!--image hero-->
-    <div class=" bg-gradient-to-tl from-green-500 to-indigo-500">
-      <img src="src/image/hero.png" tabindex="0"  class="focus:outline-none h-95 shadow rounded-t w-full object-cover object-center">
+    <div class=" slide-wrapper">
+      <ul class="slide">
+        <li>
+          <img src="src/image/hero.png" tabindex="0"  class="focus:outline-none h-72 shadow rounded-t w-full object-cover object-center">
+        </li>
+        <li>
+          <img src="src/image/hero1.jpg" tabindex="0"  class="focus:outline-none h-72 shadow rounded-t w-full object-cover object-center">
+        </li>
+        <li>
+          <img src="src/image/hero2.jpg" tabindex="0"  class="focus:outline-none h-72 shadow rounded-t w-full object-cover object-center">
+        </li>
+        <li>
+          <img src="src/image/hero3.jpg" tabindex="0"  class="focus:outline-none h-72 shadow rounded-t w-full object-cover object-center">
+        </li>
+
+      </ul>
+
     </div>
 
     <div class="flex justify-center font-bold py-10 text-3xl">
       Os Mais vendidos
     </div>
 
-    <div class="flex justify-center py-10 text-3xl gap-6">
-      <!--CARDs-->
+    <!--CARDs-->
+    <div class="flex justify-center py-10 text-3xl gap-6 border-t border-1 border-gray-200">
       <div class="max-w-sm rounded overflow-hidden shadow-lg p-5  hover:bg-gray-100 cursor-pointer">
         <img class="w-full" src="src/image/camisa.png" alt="camisa">
         <div class="px-6 py-4 ">
@@ -78,7 +95,21 @@
           </p>
         </div>
         <div class="px-6 pt-4 pb-2 flex justify-center">
-          <span class="inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
+          <span class="hover:bg-green-600 inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
+            Saiba Mais
+          </span>
+        </div>
+      </div>
+      <div class="max-w-sm rounded overflow-hidden shadow-lg p-5  hover:bg-gray-100 cursor-pointer">
+        <img class="w-full" src="src/image/camisa.png" alt="camisa">
+        <div class="px-6 py-4 ">
+          <div class="font-bold text-xl mb-2 text-center">Camisa Polo 02</div>
+          <p class="text-gray-400 text-xs italic text-center">
+            Lorem ipsum dolor sit amet...
+          </p>
+        </div>
+        <div class="px-6 pt-4 pb-2 flex justify-center">
+          <span class="hover:bg-green-600 inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
             Saiba Mais
           </span>
           </div>
@@ -92,21 +123,7 @@
           </p>
         </div>
         <div class="px-6 pt-4 pb-2 flex justify-center">
-          <span class="inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
-            Saiba Mais
-          </span>
-          </div>
-      </div>
-      <div class="max-w-sm rounded overflow-hidden shadow-lg p-5  hover:bg-gray-100 cursor-pointer">
-        <img class="w-full" src="src/image/camisa.png" alt="camisa">
-        <div class="px-6 py-4 ">
-          <div class="font-bold text-xl mb-2 text-center">Camisa Polo 02</div>
-          <p class="text-gray-400 text-xs italic text-center">
-            Lorem ipsum dolor sit amet...
-          </p>
-        </div>
-        <div class="px-6 pt-4 pb-2 flex justify-center">
-          <span class="inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
+          <span class="hover:bg-green-600 inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
             Saiba Mais
           </span>
         </div>
@@ -120,19 +137,25 @@
           </p>
         </div>
         <div class="px-6 pt-4 pb-2 flex justify-center">
-          <span class="inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
+          <span class="hover:bg-green-600 inline-block bg-green-500 rounded px-8 py-3 text-sm font-semibold text-white">
             Saiba Mais
           </span>
         </div>
       </div>
-
     </div>
 
+    <!-- button-->
+    <div class="flex justify-center my-10">
+      <div class="px-6 flex justify-center">
+          <span class="hover:bg-green-600 inline-block bg-green-500 rounded px-20 py-3 text-md text-white">
+            Monte um look e diremos qual estilo mais combina com você
+          </span>
+      </div>
+    </div>
 
   </main>
 
 <!--Footer-->
-
   <footer class="bg-gray-200">
     <div class="px-10 grid grid-cols-1 p-3 py-4 mx-auto text-white md:grid-cols-6 md:pt-20 md:pr-20 md:pb-5">
       <div class="pt-10 md:col-span-1 md:pt-0">
@@ -203,6 +226,6 @@
       </div>
     </div>
   </footer>
-
+  <script type="module" src="src/js/script.js"></script>
 </body>
 </html>
