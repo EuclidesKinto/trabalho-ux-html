@@ -62,15 +62,49 @@
   <main class="flex-1">
 
     <div class="flex-col justify-center pt-5 border-b">
-        <h1 class="text-center text-4xl italic my-5">Categorias</h1>
+        <h1 class="text-center text-4xl italic my-5">Cadastre-se</h1>
     </div>
 
     <div class="container flex justify-center m-16">
-      <div class="col-span-12">
-        <div class="lg:w-1/2 md:w-2/3 mx-auto">
-          <div>Categoria</div>
+      <section class="text-gray-600 body-font relative">
+        <div class="container px-5  mx-auto">
+          <div class="lg:w-1/2 md:w-2/3 mx-auto">
+            <div class="flex flex-wrap -m-2">
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="name" class="leading-7 text-sm text-gray-600">Nome</label>
+                  <input type="text" id="name" name="name" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="email" class="leading-7 text-sm text-gray-600">E-mail</label>
+                  <input type="email" id="email" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="password" class="leading-7 text-sm text-gray-600">Senha</label>
+                  <input type="password" id="password" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+              <div class="p-2 w-full">
+                <div class="relative">
+                  <label for="confirmpassword" class="leading-7 text-sm text-gray-600">Repita a Senha</label>
+                  <input type="password" id="confirmpassword" name="email" class="w-full bg-gray-100 bg-opacity-50 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+              </div>
+
+              <div class="p-2 w-full">
+                <button class="flex mx-auto text-white bg-orange-500 border-0 py-2 px-16 focus:outline-none hover:bg-orange-600 rounded text-lg">Cadastrar</button>
+              </div>
+              <div class="p-2 w-full pt-8 mt-8 border-t border-gray-200 text-center">
+                <a href="login.html" class="text-indigo-500">Você já é cadastrado? Então clique aqui para entrar!</a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
     </div>
 
 
